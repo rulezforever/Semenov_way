@@ -1,0 +1,110 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__list {
+  @include list-reset;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 40px;
+  width: 818px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+
+.main-nav__item a {
+  @include font-set(14px, auto, 500);
+  color: $deep-dark;
+
+  &:hover,
+  &:focus {
+    color: $basic;
+  }
+}
+
+
+.main-nav__toggle {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: $basic;
+  position: relative;
+  display: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    width: 23px;
+    height: 1px;
+    background-color: $grey;
+    box-shadow: 0 6px 0 0 $grey, 0 12px 0 0 $grey;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.main-nav__phone {
+  @include font-set(18px, 32px, 400);
+  color: $deep-dark;
+  text-decoration: underline;
+  padding-top: 0;
+  padding-left: 93px;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: $basic;
+  }
+
+  &:hover .main-nav__phone-icon {
+    fill: $basic;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  // .main-nav__phone-icon path {
+  //   &:hover,
+  //   &:focus {
+  //     fill: $basic;
+  //   }
+  // }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 3px;
+  //   left: 53px;
+  //   width: 30px;
+  //   height: 30px;
+  //   background-image: url("../img/phone.svg");
+  //   background-repeat: no-repeat;
+
+  //   &:hover,
+  //   &:focus {
+  //     fill: $basic;
+  //   }
+  // }
+}
+
+.main-nav__phone-icon {
+  position: absolute;
+  top: 5px;
+  right: 197px;
+  fill: transparent;
+}

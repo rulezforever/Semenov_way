@@ -4,20 +4,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>Semenov-way</title>
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin>
 </head>
 
 <body class="page__body">
 
   <header class="page-header page-header--main wrapper">
 
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <a class="page-header__logo">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="img/logo-mobile.svg">
+          <img src="img/logo.svg" width="57" height="22" alt="Логотип Way">
+        </picture>
+      </a>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a href="">О путешествии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="">Цены</a>
+        </li>
+      </ul>
+      <a class="main-nav__phone" href="tel:+749978468446">+7 (499) -784-684-46
+        <svg class="main-nav__phone-icon" width="30" height="30">
+          <use xlink:href="img/svg-sprite.svg#phone"></use>
+        </svg>
+      </a>
+    </nav>
+
   </header>
 
-  <main class="page-main">
+  <main class="page-main wrapper">
+   <!-- <div class="page-main wrapper">
 
+   </div> -->
   </main>
 
   <footer class="page-footer">
