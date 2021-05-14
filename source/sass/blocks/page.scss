@@ -1,0 +1,9 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  overflow-x: hidden;
+  min-width: 320px;
+}

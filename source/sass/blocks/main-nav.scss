@@ -3,6 +3,16 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 15px;
+    width: 100%;
+  }
 }
 
 .main-nav__list {
@@ -50,10 +60,24 @@
     height: 1px;
     background-color: $grey;
     box-shadow: 0 6px 0 0 $grey, 0 12px 0 0 $grey;
+
+    @media (max-width: $tablet-width) {
+      left: 24px;
+    }
+
+    @media (max-width: $mobile-width) {
+      left: 14px;
+    }
   }
 
   @media (max-width: $tablet-width) {
     display: inline-block;
+    width: 72px;
+    height: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 50px;
   }
 }
 
@@ -77,29 +101,6 @@
   @media (max-width: $tablet-width) {
     display: none;
   }
-
-  // .main-nav__phone-icon path {
-  //   &:hover,
-  //   &:focus {
-  //     fill: $basic;
-  //   }
-  // }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 3px;
-  //   left: 53px;
-  //   width: 30px;
-  //   height: 30px;
-  //   background-image: url("../img/phone.svg");
-  //   background-repeat: no-repeat;
-
-  //   &:hover,
-  //   &:focus {
-  //     fill: $basic;
-  //   }
-  // }
 }
 
 .main-nav__phone-icon {
