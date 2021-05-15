@@ -26,12 +26,18 @@
     background-image: url("../img/promo-mobile@1x.jpg");
     min-height: 235px;
     min-width: 320px;
-    background-size: contain;
+    background-size: auto 235px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-mobile@2x.jpg");
     }
   }
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .promo__title {
@@ -41,18 +47,18 @@
   word-wrap: break-word;
   width: 412px;
   padding-top: 185px;
-  margin-left: 1075px;
+  margin-left: 635px;
 
   @media (max-width: $tablet-width) {
     @include font-set(30px, 150%, 600);
     padding-top: 60px;
-    margin-left: 185px;
+    margin-left: 20px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     @include font-set(24px, 150%, 600);
     padding-top: 83px;
-    margin-left: 25px;
+    margin-left: 8px;
     width: 280px;
     text-align: center;
   }
@@ -62,23 +68,25 @@
   @include font-set(16px, 170%, 400);
   color: $white;
   word-wrap: break-word;
-  width: 376px;
+  width: 378px;
   padding-top: 12px;
-  margin-left: 1075px;
+  margin-left: 613px;
+  letter-spacing: -0.47px;
 
   @media (max-width: $tablet-width) {
-    margin-left: 185px;
+    margin-left: 0;
     text-align: center;
-    letter-spacing: -0.47;
+    letter-spacing: -0.47px;
     width: 420px;
     padding: 0;
     margin-bottom: 0;
   }
 
   @media (max-width: $mobile-width) {
+    letter-spacing: -0.47px;
     margin-left: 0;
     color: $dark;
-    width: 288px;
+    width: 90%;
     padding-top: 82px;
   }
 }
@@ -87,8 +95,8 @@
   @include center;
   width: 300px;
   padding: 29px 0;
-  margin-top: 34px;
-  margin-left: 1075px;
+  margin-top: 20px;
+  margin-left: 570px;
   position: relative;
   justify-content: flex-start;
   padding-left: 41px;
@@ -96,10 +104,17 @@
   @media (max-width: $tablet-width) {
     @include font-set(10px, auto, 500);
     margin-top: 9px;
-    margin-left: 259px;
+    margin-left: 0;
     padding: 16px 40px;
     width: 170px;
     letter-spacing: 2px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    margin-top: 22px;
+    width: 210px;
+    text-align: center;
   }
 }
 
@@ -113,5 +128,9 @@
 
   @media (max-width: $tablet-width) {
     top: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 18px;
   }
 }
