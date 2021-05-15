@@ -1,0 +1,117 @@
+.promo {
+  font-family: $primary-font;
+  min-height: 860px;
+  min-width: 1920px;
+  background-image: url("../img/promo@1x.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 1920px 860px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/promo-tablet@1x.jpg");
+    min-height: 344px;
+    min-width: 768px;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/promo-mobile@1x.jpg");
+    min-height: 235px;
+    min-width: 320px;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-mobile@2x.jpg");
+    }
+  }
+}
+
+.promo__title {
+  @include font-set(55px, 80px, 500);
+  color: $white;
+  margin: 0;
+  word-wrap: break-word;
+  width: 412px;
+  padding-top: 185px;
+  margin-left: 1075px;
+
+  @media (max-width: $tablet-width) {
+    @include font-set(30px, 150%, 600);
+    padding-top: 60px;
+    margin-left: 185px;
+  }
+
+  @media (max-width: $tablet-width) {
+    @include font-set(24px, 150%, 600);
+    padding-top: 83px;
+    margin-left: 25px;
+    width: 280px;
+    text-align: center;
+  }
+}
+
+.promo__slogan {
+  @include font-set(16px, 170%, 400);
+  color: $white;
+  word-wrap: break-word;
+  width: 376px;
+  padding-top: 12px;
+  margin-left: 1075px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 185px;
+    text-align: center;
+    letter-spacing: -0.47;
+    width: 420px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    color: $dark;
+    width: 288px;
+    padding-top: 82px;
+  }
+}
+
+.promo__link {
+  @include center;
+  width: 300px;
+  padding: 29px 0;
+  margin-top: 34px;
+  margin-left: 1075px;
+  position: relative;
+  justify-content: flex-start;
+  padding-left: 41px;
+
+  @media (max-width: $tablet-width) {
+    @include font-set(10px, auto, 500);
+    margin-top: 9px;
+    margin-left: 259px;
+    padding: 16px 40px;
+    width: 170px;
+    letter-spacing: 2px;
+  }
+}
+
+.promo__link__icon {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 17px;
+  height: 17px;
+  fill: transparent;
+
+  @media (max-width: $tablet-width) {
+    top: 20px;
+  }
+}

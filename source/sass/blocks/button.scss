@@ -1,0 +1,21 @@
+.button {
+  @include font-set(12px, auto, 600);
+  font-family: $primary-font;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $basic;
+  color: $white;
+  width: 340px;
+  padding: 10px 0;
+  word-break: break-all;
+  letter-spacing: 2px;
+
+  // &:hover,
+  // &:focus {
+  //   background-color: $hover-green;
+  // }
+
+  // &:active {
+  //   color: rgba($white, 0.3);
+  // }
+}
