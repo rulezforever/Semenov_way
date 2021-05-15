@@ -2,23 +2,45 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 388px;
+  // padding: 0 388px;
   margin: 0 auto;
   // background-color: cadetblue;
-
-  @media (max-width: $tablet-width) {
-    // justify-content: space-between;
-  }
 }
 
 .page-footer__list {
   @include list-reset;
+
+  &--one {
+    @media (max-width: $mobile-width) {
+      width: 46%;
+      text-align: center;
+    }
+  }
+
+  &--two {
+    @media (max-width: $mobile-width) {
+      width: 46%;
+      text-align: center;
+    }
+  }
+
+  &--three {
+    @media (max-width: $mobile-width) {
+      width: 46%;
+      text-align: center;
+      margin-top: 22px;
+    }
+  }
 }
 
 .page-footer__lists-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    justify-content: space-evenly;
+  }
 }
 
 .page-footer__contacts-container {
@@ -26,6 +48,11 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    padding-top: 10px;
+  }
 }
 
 .page-footer__corporate-title {
@@ -39,19 +66,30 @@
 }
 
 .page-footer__trip-title,
-.page-footer__contacts-title {
+.page-footer__contacts-title,
+.page-footer__corporate-title {
   @include font-set(18px, 32px, 600);
   color: $deep-dark;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
 }
 
 .page-footer__corporate-description {
   @include font-set(14px, 170%, 400);
   width: 98%;
+  padding-top: 5px;
 
   @media (max-width: $tablet-width) {
     text-align: center;
     padding: 0 19px;
     width: 95%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    width: 100%;
   }
 }
 
@@ -62,7 +100,6 @@
 }
 /////------------------------------------------------------------
 .page-footer__corporate {
-  // margin-left: 54px;
   width: 28%;
   position: relative;
   // background-color: aqua;
@@ -75,20 +112,25 @@
     width: 1px;
     height: 189px;
     background-color: $grey2;
-
-    // @media (max-width: $tablet-width) {
-    //   width: 726px;
-    //   height: 1px;
-    //   top: 32px;
-    //   left: 22px;
-    // }
   }
 
   @media (max-width: $tablet-width) {
     margin-top: 32px;
     padding-top: 15px;
+    margin-left: 19px;
+    margin-right: 19px;
     width: 100%;
     border-top: 1px solid $grey2;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 92%;
+    margin-top: 12px;
+    padding: 0 3px;
+    padding-top: 12px;
+    border-top: 1px solid $grey2;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -118,6 +160,13 @@
     width: 39%;
     margin-left: 10px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 92%;
+    margin-top: 21px;
+    padding-top: 10px;
+    border-top: 1px solid $grey2;
+  }
 }
 
 .page-footer__trip {
@@ -127,6 +176,11 @@
   @media (max-width: $tablet-width) {
     padding-left: 20px;
     width: 45%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 92%;
+    padding: 0 12px;
   }
 }
 /////---------------------------------------------------
@@ -148,6 +202,10 @@
   top: 0;
   left: 0;
   fill: transparent;
+
+  @media (max-width: $mobile-width) {
+    left: 20px;
+  }
 }
 
 .page-footer__phone {
@@ -156,6 +214,10 @@
   position: relative;
   padding-left: 39px;
   padding-top: 21px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 15px;
+  }
 }
 
 .page-footer__phone-icon {
@@ -163,4 +225,8 @@
   top: 15px;
   left: 0;
   fill: transparent;
+
+  @media (max-width: $mobile-width) {
+    left: 48px;
+  }
 }
