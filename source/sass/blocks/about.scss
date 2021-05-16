@@ -1,21 +1,76 @@
+.about__tabs {
+  width: 899px;
+}
+
 .about__tabs-header {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $dark-opacity;
 }
 
 .about__tab-title {
-  padding: 3px 10px;
-  margin-right: 10px;
-  font-size: 20px;
-  font-weight: 700;
-  background-color: #95a5a6;
-  color: #ffffff;
-  border-radius: 5px;
+  @include font-set(20px, auto, 500);
+  letter-spacing: -0.41px;
+  color: $dark;
+  opacity: 0.3;
   cursor: pointer;
 }
 
 .about__tab-title--active {
-  background-color: #34495e;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  color: $basic;
+  opacity: 1;
+}
+
+.about__title {
+  @include font-set(55px, 90px, 600);
+  letter-spacing: -1.25px;
+  color: $dark;
+  position: relative;
+  grid-area: title;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 3px;
+    bottom: -20px;
+    left: 5px;
+    background-color: $basic;
+  }
+}
+
+.about__describe {
+  @include font-set(16px, 28px, 400);
+  letter-spacing: -0.47px;
+  color: $dark;
+  opacity: 0.7;
+  width: 370px;
+  grid-area: describe;
+}
+
+.about__button {
+  @include font-set(12px, auto, 600);
+  letter-spacing: 2px;
+  width: 250px;
+  padding: 20px 20px;
+  grid-area: button;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-hover;
+  }
+}
+
+.about__tab-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "title picture"
+    "describe picture"
+    "button picture";
+}
+
+.about__image {
+  grid-area: picture;
 }
