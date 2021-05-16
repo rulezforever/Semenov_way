@@ -49,7 +49,7 @@ const html = () => {
 const scripts = () => {
   return gulp.src("source/js/*.js")
     .pipe(plumber())
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(rename({
       suffix: ".min"
     }))

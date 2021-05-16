@@ -1,0 +1,21 @@
+.about__tabs-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__tab-title {
+  padding: 3px 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #95a5a6;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about__tab-title--active {
+  background-color: #34495e;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
