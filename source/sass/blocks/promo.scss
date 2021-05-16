@@ -6,6 +6,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: 1920px 860px;
+  margin-bottom: 155px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo@2x.jpg");
@@ -16,6 +17,7 @@
     min-height: 344px;
     min-width: 768px;
     background-size: cover;
+    margin-bottom: 55px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-tablet@2x.jpg");
@@ -27,6 +29,7 @@
     min-height: 235px;
     min-width: 320px;
     background-size: auto 235px;
+    margin-bottom: 90px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-mobile@2x.jpg");

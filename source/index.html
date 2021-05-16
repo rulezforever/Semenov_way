@@ -14,7 +14,7 @@
 
 <body class="page__body">
 
-  <header class="page-header page-header--main wrapper">
+  <header class="page-header wrapper">
 
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <a class="page-header__logo">
@@ -45,13 +45,93 @@
     <section class="promo">
       <div class="promo__wrapper">
         <h1 class="promo__title">Путешествие по Европе</h1>
-        <p class="promo__slogan">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+        <p class="promo__slogan">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
+          потрясающая красота природы.</p>
         <a class="promo__link button" href="">Смотреть тур
           <svg class="promo__link__icon" width="14" height="14">
             <use xlink:href="img/svg-sprite.svg#arrow-right"></use>
           </svg>
         </a>
       </div>
+    </section>
+
+    <section class="places wrapper">
+      <div class="places__wrapper">
+      <h2 class="places__title">Места посещения</h2>
+      <p class="places__slogan">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+      <ul class="places__list">
+        <li class="places__item">
+          <a href="" class="places__picture">
+            <picture>
+              <source media="(min-width: 1024px)" type="image/webp"
+                srcset="img/greece@1x.webp 1x, img/greece@2x.webp 2x">
+              <source media="(min-width: 1024px)" srcset="img/greece@1x.png 1x, img/greece@2x.png 2x" width="288"
+                height="425">
+              <source type="image/webp" srcset="img/greece-mobile@1x.webp 1x, img/greece-mobile@2x.webp 2x">
+              <img src="img/greece-mobile@1x.png" srcset="img/greece-mobile@2x.png 2x" width="350" height="430"
+                alt="Греция" class="places__image">
+            </picture>
+            <p class="places__bottom-text">Греция</p>
+          </a>
+        </li>
+        <li class="places__item">
+          <a href="" class="places__picture">
+            <picture>
+              <source media="(min-width: 1024px)" type="image/webp"
+                srcset="img/albania@1x.webp 1x, img/albania@2x.webp 2x">
+              <source media="(min-width: 1024px)" srcset="img/albania@1x.png 1x, img/albania@2x.png 2x" width="288"
+              height="425">
+              <source type="image/webp" srcset="img/albania-mobile@1x.webp 1x, img/albania-mobile@2x.webp 2x">
+              <img src="img/albania-mobile@1x.png" srcset="img/albania-mobile@2x.png 2x" width="350" height="430"
+                alt="Албания" class="places__image">
+            </picture>
+            <p class="places__bottom-text">Албания</p>
+          </a>
+        </li>
+        <li class="places__item">
+          <a href="" class="places__picture">
+            <picture>
+              <source media="(min-width: 1024px)" type="image/webp"
+                srcset="img/macedonia@1x.webp 1x, img/macedonia@2x.webp 2x">
+              <source media="(min-width: 1024px)" srcset="img/macedonia@1x.png 1x, img/macedonia@2x.png 2x" width="288"
+              height="425">
+              <source type="image/webp" srcset="img/macedonia-mobile@1x.webp 1x, img/macedonia-mobile@2x.webp 2x">
+              <img src="img/macedonia-mobile@1x.png" srcset="img/macedonia-mobile@2x.png 2x" width="350" height="430" alt="Македония"
+                class="places__image">
+            </picture>
+            <p class="places__bottom-text">Македония</p>
+          </a>
+        </li>
+        <li class="places__item">
+          <a href="" class="places__picture">
+            <picture>
+              <source media="(min-width: 1024px)" type="image/webp"
+                srcset="img/montenegro@1x.webp 1x, img/montenegro@2x.webp 2x">
+              <source media="(min-width: 1024px)" srcset="img/montenegro@1x.png 1x, img/montenegro@2x.png 2x" width="288"
+              height="425">
+              <source type="image/webp" srcset="img/montenegro-mobile.webp 1x, img/montenegro-mobile@2x.webp 2x">
+              <img src="img/montenegro-mobile@1x.png" srcset="img/montenegro-mobile@2x.png 2x" width="350" height="430"
+                alt="Черногория" class="places__image">
+            </picture>
+            <p class="places__bottom-text">Черногория</p>
+          </a>
+        </li>
+        <li class="places__item">
+          <a href="" class="places__picture">
+            <picture>
+              <source media="(min-width: 1024px)" type="image/webp"
+                srcset="img/croatia@1x.webp 1x, img/croatia@2x.webp 2x">
+              <source media="(min-width: 1024px)" srcset="img/croatia@1x.png 1x, img/croatia@2x.png 2x" width="288"
+              height="425">
+              <source type="image/webp" srcset="img/croatia-mobile.webp 1x, img/croatia-mobile@2x.webp 2x">
+              <img src="img/croatia-mobile@1x.png" srcset="img/croatia-mobile@2x.png 2x" width="350" height="430" alt="Хорватия"
+                class="places__image">
+            </picture>
+            <p class="places__bottom-text">Хорватия</p>
+          </a>
+        </li>
+      </ul>
+    </div>
     </section>
   </main>
 
@@ -130,7 +210,9 @@
     </div>
     <div class="page-footer__corporate">
       <p class="page-footer__corporate-title">Корпоративные путешествия</p>
-      <p class="page-footer__corporate-description">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+      <p class="page-footer__corporate-description">Также вы можете заказать индивидуальное путешествие под вашу
+        компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются
+        оличным времяпрепровождением</p>
     </div>
 
   </footer>

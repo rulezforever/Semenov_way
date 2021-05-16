@@ -28,7 +28,6 @@
   }
 }
 
-
 .main-nav__item a {
   @include font-set(14px, auto, 500);
   color: $deep-dark;
@@ -39,7 +38,6 @@
     color: $basic;
   }
 }
-
 
 .main-nav__toggle {
   width: 50px;
