@@ -1,14 +1,24 @@
 .prices {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    align-items: center;
+  }
+}
+
+.prices__content {
   display: grid;
   grid-template-columns: 397px 452px 456px;
   grid-template-areas: "complex economy price";
-  padding-left: 375px;
+  // padding-left: 375px;
 
   @media (max-width: $tablet-width) {
-    grid-template-columns: 313px 313px;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "price price"
       "complex economy";
+    padding: 0;
   }
 }
 
@@ -21,6 +31,15 @@
   border-radius: 6px;
   box-sizing: border-box;
   padding: 40px 30px 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+    min-height: 629px;
+    padding: 30px 20px 0;
+    align-items: center;
+    justify-self: start;
+    margin-left: 70px;
+  }
 }
 
 .prices__card--complex {
@@ -29,11 +48,18 @@
 
 .prices__card--economy {
   grid-area: economy;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 25px;
+  }
 }
 
 .prices__card--economy .prices__card-list {
-  margin-bottom: 28px;
-  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.prices__card--economy .prices__card-item {
+  margin-bottom: 14px;
 }
 
 .prices__card-title {
@@ -42,6 +68,10 @@
   color: $deep-dark;
   opacity: 0.7;
   margin: 0 0 37px;
+
+  @media (max-width: $tablet-width) {
+    @include font-set(24px, 38px, 600);
+  }
 }
 
 .prices__card-slogan {
@@ -50,6 +80,10 @@
   position: relative;
   width: 289px;
   margin: 0 0 60px;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
 
 
   &::after {
@@ -69,8 +103,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .prices__card-item {
@@ -78,7 +111,7 @@
   color: $dark;
   position: relative;
   width: 280px;
-  // margin-bottom: 7px;
+  margin-bottom: 11px;
   padding-left: 30px;
 
   &::before {
@@ -106,6 +139,11 @@
   width: 370px;
   padding: 108px 30px 30px;
   grid-area: price;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    width: auto;
+  }
 }
 
 .prices__contacts-title {
@@ -122,6 +160,16 @@
     background-color: $basic;
     top: 105px;
     left: 0;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    @include font-set(30px, 150%, 600);
+    text-align: center;
+    margin: 0 0 5px;
   }
 }
 
@@ -131,12 +179,25 @@
   opacity: 0.7;
   width: 299px;
   margin-bottom: 62px;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    text-align: center;
+    margin-bottom: 32px;
+  }
 }
 
 .prices__contacts-call {
   @include font-set(22px, 34px, 500);
   color: $deep-dark;
   margin: 0 45px 15px;
+
+  @media (max-width: $tablet-width) {
+    @include font-set(18px, 34px, 500);
+    width: auto;
+    text-align: center;
+    margin: 0 45px 12px;
+  }
 }
 
 .prices__contacts__phone {
@@ -144,6 +205,16 @@
   color: $black;
   position: relative;
   margin-left: 45px;
+
+  @media (max-width: $tablet-width) {
+    @include font-set(18px, 32px, 400);
+    width: auto;
+    text-align: center;
+    color: $basic;
+    text-decoration: underline;
+    display: block;
+    margin: 0;
+  }
 }
 
 .prices__contacts__phone-icon {
@@ -151,4 +222,8 @@
   top: 0;
   left: -45px;
   fill: transparent;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }

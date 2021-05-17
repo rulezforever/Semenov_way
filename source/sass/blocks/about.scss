@@ -1,5 +1,9 @@
 .about {
   margin-bottom: 240px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .about__tabs {
