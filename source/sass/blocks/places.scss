@@ -1,6 +1,6 @@
-// .places {
-
-// }
+.places {
+  margin-bottom: 96px;
+}
 
 
 .places__wrapper {
@@ -194,8 +194,8 @@
 
 .places__image {
   @media (max-width: $tablet-width) {
-    // width: 288px;
-    width: auto;
-    // height: 425px;
+    width: 288px;
+    // width: auto;
+    height: 425px;
   }
 }

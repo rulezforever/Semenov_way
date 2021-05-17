@@ -22,3 +22,10 @@
     padding-top: 5px;
   }
 }
+
+.page-header__logo-img {
+  @media (max-width: $tablet-width) {
+    width: 44px;
+    height: 22px;
+  }
+}

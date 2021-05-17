@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function() {
   function hideTabContent(a) {
     for (let i = a; i < content.length; i++) {
     content[i].classList.remove('show');
-    content[i].classList.add('hide');
+    content[i].classList.add('visually-hidden');
     tab[i].classList.remove('about__tab-title--active');
     }
   }
@@ -17,8 +17,8 @@ window.addEventListener('DOMContentLoaded', function() {
   hideTabContent(1);
 
   function showTabContent(b) {
-    if(content[b].classList.contains('hide')) {
-    content[b].classList.remove('hide');
+    if(content[b].classList.contains('visually-hidden')) {
+    content[b].classList.remove('visually-hidden');
     content[b].classList.add('show');
     tab[b].classList.add('about__tab-title--active');
     }
