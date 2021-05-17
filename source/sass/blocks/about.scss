@@ -1,6 +1,14 @@
+.about {
+  margin-bottom: 240px;
+}
+
 .about__tabs {
   width: 899px;
-  position: relative;
+  // position: relative;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .about__tabs-header {
@@ -9,6 +17,10 @@
   padding-bottom: 20px;
   margin-bottom: 90px;
   border-bottom: 1px solid $dark-opacity;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .about__tab-title {
@@ -33,6 +45,11 @@
   padding: 0;
   margin: 0;
 
+  @media (max-width: $tablet-width) {
+    @include font-set(30px, 150%, 600);
+    text-align: center;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -41,6 +58,10 @@
     bottom: -20px;
     left: 5px;
     background-color: $basic;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -53,6 +74,13 @@
   grid-area: describe;
   margin: 0;
   margin-top: 46px;
+
+  @media (max-width: $tablet-width) {
+    @include font-set(16px, 28px, 400);
+    text-align: center;
+    width: auto;
+    margin: 0 21px;
+  }
 }
 
 .about__button {
@@ -67,6 +95,13 @@
   &:focus {
     background-color: $basic-hover;
   }
+
+  @media (max-width: $tablet-width) {
+    @include font-set(10px, auto, 500);
+    padding: 20px 0;
+    align-self: center;
+    margin: 0 auto;
+  }
 }
 
 .about__tab-content {
@@ -80,7 +115,7 @@
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
-    grid-template-rows: 90px 368px 112px 16px;
+    grid-template-rows: 67px 169px 96px 419px;
     grid-template-areas: "title"
       "describe"
       "button"
@@ -93,8 +128,11 @@
   height: 596px;
 
   @media (max-width: $tablet-width) {
-    width: 768px;
-    height: 415px;
+    // width: 768px;
+    width: auto;
+    // height: 415px;
+    height: auto;
+    // object-fit: cover;
   }
 }
 
@@ -103,12 +141,26 @@
   width: 382px;
   height: 367px;
   position: absolute;
-  top: 230px;
-  left: 787px;
+
+  // z-index: 4;
+  top: 330px;
+  left: 250px;
 }
 
 .about__picture {
   grid-area: picture;
   align-self: end;
   justify-self: end;
+
+  @media (max-width: $tablet-width) {
+
+    align-self: auto;
+    justify-self: center;
+    width: auto;
+  }
+}
+
+.about__container {
+  position: relative;
+  z-index: 2;
 }

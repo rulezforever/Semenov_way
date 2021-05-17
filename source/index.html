@@ -19,7 +19,7 @@
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <a class="page-header__logo">
         <picture>
-          <source media="(min-width: 1024px)" srcset="img/logo.svg" >
+          <source media="(min-width: 1024px)" srcset="img/logo.svg">
           <img class="page-header__logo-img" src="img/logo-mobile.svg" width="58" height="22" alt="Логотип Way">
         </picture>
       </a>
@@ -65,7 +65,7 @@
               <picture>
                 <source media="(min-width: 1024px)" type="image/webp"
                   srcset="img/greece@1x.webp 1x, img/greece@2x.webp 2x">
-                <source media="(min-width: 1024px)" srcset="img/greece@1x.png 1x, img/greece@2x.png 2x" >
+                <source media="(min-width: 1024px)" srcset="img/greece@1x.png 1x, img/greece@2x.png 2x">
                 <source type="image/webp" srcset="img/greece-mobile@1x.webp 1x, img/greece-mobile@2x.webp 2x">
                 <img src="img/greece-mobile@1x.png" srcset="img/greece-mobile@2x.png 2x" width="350" height="430"
                   alt="Греция" class="places__image">
@@ -117,7 +117,7 @@
               <picture>
                 <source media="(min-width: 1024px)" type="image/webp"
                   srcset="img/croatia@1x.webp 1x, img/croatia@2x.webp 2x">
-                <source media="(min-width: 1024px)" srcset="img/croatia@1x.png 1x, img/croatia@2x.png 2x" >
+                <source media="(min-width: 1024px)" srcset="img/croatia@1x.png 1x, img/croatia@2x.png 2x">
                 <source type="image/webp" srcset="img/croatia-mobile@1x.webp 1x, img/croatia-mobile@2x.webp 2x">
                 <img src="img/croatia-mobile@1x.png" srcset="img/croatia-mobile@2x.png 2x" width="350" height="430"
                   alt="Хорватия" class="places__image">
@@ -129,35 +129,49 @@
       </div>
     </section>
     <section class="about wrapper">
-      <div class="about__tabs">
+      <div class="about__container">
+        <div class="about__tabs">
 
-        <div class="about__tabs-header" id="tabs">
-          <div class="about__tab-title about__tab-title--active">Греция</div>
-          <div class="about__tab-title">Албания</div>
-          <div class="about__tab-title">Македония</div>
-          <div class="about__tab-title">Черногория</div>
-          <div class="about__tab-title">Хорватия</div>
+          <div class="about__tabs-header" id="tabs">
+            <div class="about__tab-title about__tab-title--active">Греция</div>
+            <div class="about__tab-title">Албания</div>
+            <div class="about__tab-title">Македония</div>
+            <div class="about__tab-title">Черногория</div>
+            <div class="about__tab-title">Хорватия</div>
+          </div>
+
+          <div class="about__tab-content">
+            <h2 class="about__title">Греция</h2>
+            <p class="about__describe">На севере Греции находится один из крупнейших комплексов монастырей,
+              расположенных
+              на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь
+              основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы,
+              достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в
+              монастырях Метеоры. </p>
+            <a href="" class="about__button button">Купить тур сейчас</a>
+            <picture class="about__picture">
+              <source media="(min-width: 1024px)" type="image/webp"
+                srcset="img/greece-desc@1x.webp 1x, img/greece-desc@2x.webp 2x">
+              <source media="(min-width: 1024px)" srcset="img/greece-desc@1x.jpg 1x, img/greece-desc@2x.jpg 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="img/greece-desc-tablet@1x.webp 1x, img/greece-desc-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/greece-desc-tablet@1x.jpg 1x, img/img/greece-desc-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/greece-desc-mobile@1x.webp 1x, img/greece-desc-mobile@2x.webp 2x">
+              <img class="about__image" src="img/greece-desc-mobile@1x.jpg" srcset="img/greece-desc-mobile@2x.jpg 2x"
+                alt="Греция" width="320" height="415">
+            </picture>
+            <!-- <div class="about__feedback">feedback</div> -->
+          </div>
+          <div class="about__feedback">
+            <h2 class="about__fedback-title">Отзывы</h2>
+            <p class="about__fedback-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же
+              высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как
+              будто стоишь на краю света! </p>
+            <p class="about__fedback-author">Влада Голицина</p>
+          </div>
         </div>
 
-        <div class="about__tab-content">
-          <h2 class="about__title">Греция</h2>
-          <p class="about__describe">На севере Греции находится один из крупнейших комплексов монастырей, расположенных
-            на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь
-            основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы,
-            достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в
-            монастырях Метеоры. </p>
-          <a href="" class="about__button button">Купить тур сейчас</a>
-          <picture class="about__picture">
-            <source media="(min-width: 1024px)" type="image/webp" srcset="img/greece-desc@1x.webp 1x, img/greece-desc@2x.webp 2x">
-            <source media="(min-width: 1024px)" srcset="img/greece-desc@1x.jpg 1x, img/greece-desc@2x.jpg 2x">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/greece-desc-tablet@1x.webp 1x, img/greece-desc-tablet@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/greece-desc-tablet@1x.jpg 1x, img/img/greece-desc-tablet@2x.jpg 2x">
-            <source type="image/webp" srcset="img/greece-desc-mobile@1x.webp 1x, img/greece-desc-mobile@2x.webp 2x">
-            <img class="about__image" src="img/greece-desc-mobile@1x.jpg" srcset="img/greece-desc-mobile@2x.jpg 2x" alt="Греция" width="320" height="415">
-          </picture>
-
-          <div class="about__feedback">feedback</div>
-        </div>
 
         <div class="about__tab-content">
           <h2 class="about__title">Албания</h2>
@@ -167,12 +181,16 @@
             мелкого состояния. </p>
           <a href="" class="about__button button">Купить тур сейчас</a>
           <picture class="about__picture">
-            <source media="(min-width: 1024px)" type="image/webp" srcset="img/albania-desc@1x.webp 1x, img/albania-desc@2x.webp 2x">
+            <source media="(min-width: 1024px)" type="image/webp"
+              srcset="img/albania-desc@1x.webp 1x, img/albania-desc@2x.webp 2x">
             <source media="(min-width: 1024px)" srcset="img/albania-desc@1x.jpg 1x, img/albania-desc@2x.jpg 2x">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/albania-desc-tablet@1x.webp 1x, img/albania-desc-tablet@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/albania-desc-tablet@1x.jpg 1x, img/img/albania-desc-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="img/albania-desc-tablet@1x.webp 1x, img/albania-desc-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/albania-desc-tablet@1x.jpg 1x, img/img/albania-desc-tablet@2x.jpg 2x">
             <source type="image/webp" srcset="img/albania-desc-mobile@1x.webp 1x, img/albania-desc-mobile@2x.webp 2x">
-            <img src="img/albania-desc-mobile@1x.jpg" srcset="img/albania-desc-mobile@2x.jpg 2x" class="about__image" alt="Албания" width="320" height="415">
+            <img src="img/albania-desc-mobile@1x.jpg" srcset="img/albania-desc-mobile@2x.jpg 2x" class="about__image"
+              alt="Албания" width="320" height="415">
           </picture>
 
         </div>
@@ -184,12 +202,17 @@
             на вершину горы Татичев Камен где находится археологический памятник Кокино в длину около 100 метров.</p>
           <a href="" class="about__button button">Купить тур сейчас</a>
           <picture class="about__picture">
-            <source media="(min-width: 1024px)" type="image/webp" srcset="img/macedonia-desc@1x.webp 1x, img/macedonia-desc@2x.webp 2x">
+            <source media="(min-width: 1024px)" type="image/webp"
+              srcset="img/macedonia-desc@1x.webp 1x, img/macedonia-desc@2x.webp 2x">
             <source media="(min-width: 1024px)" srcset="img/macedonia-desc@1x.jpg 1x, img/macedonia-desc@2x.jpg 2x">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/macedonia-desc-tablet@1x.webp 1x, img/macedonia-desc-tablet@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/macedonia-desc-tablet@1x.jpg 1x, img/img/macedonia-desc-tablet@2x.jpg 2x">
-            <source type="image/webp" srcset="img/macedonia-desc-mobile@1x.webp 1x, img/macedonia-desc-mobile@2x.webp 2x">
-            <img src="img/macedonia-desc-mobile@1x.jpg" srcset="img/macedonia-desc-mobile@2x.jpg 2x" class="about__image" alt="Македония" width="320" height="415">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="img/macedonia-desc-tablet@1x.webp 1x, img/macedonia-desc-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/macedonia-desc-tablet@1x.jpg 1x, img/img/macedonia-desc-tablet@2x.jpg 2x">
+            <source type="image/webp"
+              srcset="img/macedonia-desc-mobile@1x.webp 1x, img/macedonia-desc-mobile@2x.webp 2x">
+            <img src="img/macedonia-desc-mobile@1x.jpg" srcset="img/macedonia-desc-mobile@2x.jpg 2x"
+              class="about__image" alt="Македония" width="320" height="415">
           </picture>
         </div>
 
@@ -200,12 +223,17 @@
             составляет 80 км. </p>
           <a href="" class="about__button button">Купить тур сейчас</a>
           <picture class="about__picture">
-            <source media="(min-width: 1024px)" type="image/webp" srcset="img/montenegro-desc@1x.webp 1x, img/montenegro-desc@2x.webp 2x">
+            <source media="(min-width: 1024px)" type="image/webp"
+              srcset="img/montenegro-desc@1x.webp 1x, img/montenegro-desc@2x.webp 2x">
             <source media="(min-width: 1024px)" srcset="img/montenegro-desc@1x.jpg 1x, img/montenegro-desc@2x.jpg 2x">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/macedonia-desc-tablet@1x.webp 1x, img/montenegro-desc-tablet@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/montenegro-desc-tablet@1x.jpg 1x, img/img/montenegro-desc-tablet@2x.jpg 2x">
-            <source type="image/webp" srcset="img/montenegro-desc-mobile@1x.webp 1x, img/montenegro-desc-mobile@2x.webp 2x">
-            <img src="img/montenegro-desc-mobile@1x.jpg" srcset="img/montenegro-desc-mobile@2x.jpg 2x" class="about__image" alt="Черногория" width="320" height="415">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="img/macedonia-desc-tablet@1x.webp 1x, img/montenegro-desc-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/montenegro-desc-tablet@1x.jpg 1x, img/img/montenegro-desc-tablet@2x.jpg 2x">
+            <source type="image/webp"
+              srcset="img/montenegro-desc-mobile@1x.webp 1x, img/montenegro-desc-mobile@2x.webp 2x">
+            <img src="img/montenegro-desc-mobile@1x.jpg" srcset="img/montenegro-desc-mobile@2x.jpg 2x"
+              class="about__image" alt="Черногория" width="320" height="415">
           </picture>
         </div>
 
@@ -216,15 +244,62 @@
             скульптурами — сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.</p>
           <a href="" class="about__button button">Купить тур сейчас</a>
           <picture class="about__picture">
-            <source media="(min-width: 1024px)" type="image/webp" srcset="img/croatia-desc@1x.webp 1x, img/croatia-desc@2x.webp 2x">
+            <source media="(min-width: 1024px)" type="image/webp"
+              srcset="img/croatia-desc@1x.webp 1x, img/croatia-desc@2x.webp 2x">
             <source media="(min-width: 1024px)" srcset="img/croatia-desc@1x.jpg 1x, img/croatia-desc@2x.jpg 2x">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/macedonia-desc-tablet@1x.webp 1x, img/croatia-desc-tablet@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/croatia-desc-tablet@1x.jpg 1x, img/img/croatia-desc-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="img/macedonia-desc-tablet@1x.webp 1x, img/croatia-desc-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/croatia-desc-tablet@1x.jpg 1x, img/img/croatia-desc-tablet@2x.jpg 2x">
             <source type="image/webp" srcset="img/croatia-desc-mobile@1x.webp 1x, img/croatia-desc-mobile@2x.webp 2x">
-            <img src="img/croatia-desc-mobile@1x.jpg" srcset="img/croatia-desc-mobile@2x.jpg 2x" class="about__image" alt="Хорватия" width="320" height="415">
+            <img src="img/croatia-desc-mobile@1x.jpg" srcset="img/croatia-desc-mobile@2x.jpg 2x" class="about__image"
+              alt="Хорватия" width="320" height="415">
           </picture>
         </div>
       </div>
+    </section>
+
+
+    <section class="prices">
+
+      <div class="prices__contacts">
+        <h1 class="prices__contacts-title">Цены</h1>
+        <p class="prices__contacts-text">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь
+          от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
+        <p class="prices__contacts-call">Свяжитесь с нами</p>
+        <a class="prices__contacts__phone" href="tel:+749978468446">+7 (499) -784-684-46
+          <svg class="prices__contacts__phone-icon" width="30" height="30">
+            <use xlink:href="img/svg-sprite.svg#phone"></use>
+          </svg>
+        </a>
+
+      </div>
+
+      <div class="prices__card prices__card--complex">
+        <h2 class="prices__card-title">Комплексный&nbsp;&nbsp;&nbsp;&nbsp;&#36;1999</h2>
+        <p class="prices__card-slogan">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+        <ul class="prices__card-list">
+          <li class="prices__card-item">Разработанный маршрут с гидом группы</li>
+          <li class="prices__card-item">Перелет, трансфер и проживание в отелях</li>
+          <li class="prices__card-item">Завтраки, ужины в отелях и ланчи на природе</li>
+          <li class="prices__card-item">Экскурсии по удивительно красивым местам Европы</li>
+        </ul>
+        <a href="" class="prices__card-button button">Купить тур сейчас</a>
+      </div>
+
+      <div class="prices__card prices__card--economy">
+        <h2 class="prices__card-title">Экономный &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#36;1399</h2>
+        <p class="prices__card-slogan">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+        <ul class="prices__card-list">
+          <li class="prices__card-item">Разработанный маршрут с гидом группы</li>
+          <li class="prices__card-item">Перелет и трансфер</li>
+          <li class="prices__card-item">Проживание в хостелах при отелях</li>
+          <li class="prices__card-item">Только завтраки в отелях</li>
+          <li class="prices__card-item">Экскурсии по удивительно красивым местам Европы</li>
+        </ul>
+        <a href="" class="prices__card-button button">Купить тур сейчас</a>
+      </div>
+
     </section>
   </main>
 

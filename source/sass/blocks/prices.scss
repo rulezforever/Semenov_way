@@ -1,0 +1,154 @@
+.prices {
+  display: grid;
+  grid-template-columns: 397px 452px 456px;
+  grid-template-areas: "complex economy price";
+  padding-left: 375px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 313px 313px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "price price"
+      "complex economy";
+  }
+}
+
+.prices__card {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  min-height: 672px;
+  border: 1px solid $dark-opacity;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 40px 30px 20px;
+}
+
+.prices__card--complex {
+  grid-area: complex;
+}
+
+.prices__card--economy {
+  grid-area: economy;
+}
+
+.prices__card--economy .prices__card-list {
+  margin-bottom: 28px;
+  gap: 15px;
+}
+
+.prices__card-title {
+  @include font-set(28px, 34px, 600);
+  letter-spacing: -1.27px;
+  color: $deep-dark;
+  opacity: 0.7;
+  margin: 0 0 37px;
+}
+
+.prices__card-slogan {
+  @include font-set(16px, 24px, 400);
+  color: $dark;
+  position: relative;
+  width: 289px;
+  margin: 0 0 60px;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 310px;
+    height: 1px;
+    background-color: $dark;
+    opacity: 0.3;
+  }
+}
+
+.prices__card-list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.prices__card-item {
+  @include font-set(16px, 32px, 400);
+  color: $dark;
+  position: relative;
+  width: 280px;
+  // margin-bottom: 7px;
+  padding-left: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 16px;
+    height: 10px;
+    border-left: 1px solid $dark;
+    border-bottom: 1px solid $dark;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+  }
+}
+
+.prices__card-button {
+  width: 310px;
+  padding: 30px 0;
+}
+
+.prices__contacts {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  padding: 108px 30px 30px;
+  grid-area: price;
+}
+
+.prices__contacts-title {
+  @include font-set(55px, 90px, 600);
+  color: $dark;
+  margin: 0 0 30px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 3px;
+    background-color: $basic;
+    top: 105px;
+    left: 0;
+  }
+}
+
+.prices__contacts-text {
+  @include font-set(16px, 170%, 400);
+  color: $dark;
+  opacity: 0.7;
+  width: 299px;
+  margin-bottom: 62px;
+}
+
+.prices__contacts-call {
+  @include font-set(22px, 34px, 500);
+  color: $deep-dark;
+  margin: 0 45px 15px;
+}
+
+.prices__contacts__phone {
+  @include font-set(20px, 32px, 400);
+  color: $black;
+  position: relative;
+  margin-left: 45px;
+}
+
+.prices__contacts__phone-icon {
+  position: absolute;
+  top: 0;
+  left: -45px;
+  fill: transparent;
+}
