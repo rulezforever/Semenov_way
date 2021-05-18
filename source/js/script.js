@@ -1,5 +1,3 @@
-
-
 window.addEventListener('DOMContentLoaded', function() {
   'use strict';
   let tab = document.querySelectorAll('.about__tab-title');
@@ -40,8 +38,10 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
-// const closeBtn = document.querySelector('.modal__close');
+// const buyButton = document.querySelector('.prices__card-button');
+// const modalBuy = document.querySelector('.modal');
 
-// closeBtn.addEventListener("click", () => {
+
+// buyButton.addEventListener("click", () => {
 
 // });

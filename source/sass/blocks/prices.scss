@@ -59,6 +59,20 @@
     margin: 0 auto;
     min-height: 614px;
   }
+
+  &:hover,
+  &:focus {
+    border: 3px solid $basic;
+  }
+}
+
+.prices__card:hover .prices__card-title {
+  @include font-set(28px, 34px, 600);
+  color: $basic;
+
+  @media (max-width: $tablet-width) {
+    @include font-set(24px, 34px, 600);
+  }
 }
 
 .prices__card--complex {
