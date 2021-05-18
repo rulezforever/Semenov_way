@@ -354,14 +354,23 @@
     </section>
 
     <section class="questions wrapper">
+      <picture class="questions__picture">
+        <source media="(min-width: 1024px)" type="image/webp"
+          srcset="img/sky@1x.webp 1x, img/sky@2x.webp 2x">
+        <source media="(min-width: 1024px)"
+          srcset="img/sky@1x.jpg 1x, img/img/sky@2x.jpg 2x">
+        <source type="image/webp" srcset="img/sky-tablet@1x.webp 1x, img/sky-tablet@2x.webp 2x">
+        <img src="img/sky-tablet@1x.jpg" srcset="img/sky-tablet@2x.jpg 2x" class="questions__image"
+          alt="Закат" width="768" height="456">
+      </picture>
       <div class="questions__wrapper">
         <h2 class="questions__header">У Вас остались вопросы?</h2>
         <p class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-        <form class="questions__form" id="form" method="post" action="https://echo.htmlacademy.ru">
+        <form class="questions__form" id="qform" method="post" action="https://echo.htmlacademy.ru">
           <div class="questions__inputs">
-            <input class="questions__form-phone" id="phone" type="tel" name="phone"
+            <input class="questions__form-phone" id="phone-number" type="tel" name="phone"
               placeholder=" +7 Введите 10 цифр номера" required>
-            <input class="questions__form-email" id="email" type="email" name="email" placeholder="E-mail" required>
+            <input class="questions__form-email" id="e-mail" type="email" name="email" placeholder="E-mail" required>
           </div>
         </form>
         <button class="questions__button button" type="submit">Отправить</button>
@@ -453,21 +462,21 @@
 
   <section class="modal modal__buy">
     <div class="modal__wrapper">
-    <picture class="modal__picture">
-      <img src="img/modal-buy@1x.jpg" srcset="img/modal-buy@2x.jpg 2x" class="modal__image" alt="Волны" width="338"
-        height="444">
-    </picture>
-    <form class="modal__form" id="form" method="post" action="https://echo.htmlacademy.ru">
-      <h2 class="modal__form-header">Купить тур</h2>
-      <div class="modal__inputs">
-        <input class="modal__form-phone" id="phone" type="tel" name="phone"
-          placeholder=" +7 Введите 10 цифр номера" required>
-        <input class="modal__form-email" id="email" type="email" name="email" placeholder="E-mail" required>
-      </div>
-      <button class="modal__button button" type="submit">Отправить</button>
-    </form>
-    <button class="modal__close" type="button" aria-label="Закрыть"></button>
-  </div>
+      <picture class="modal__picture">
+        <img src="img/modal-buy@1x.jpg" srcset="img/modal-buy@2x.jpg 2x" class="modal__image" alt="Волны" width="338"
+          height="444">
+      </picture>
+      <form class="modal__form" id="form" method="post" action="https://echo.htmlacademy.ru">
+        <h2 class="modal__form-header">Купить тур</h2>
+        <div class="modal__inputs">
+          <input class="modal__form-phone" id="phone" type="tel" name="phone" placeholder=" +7 Введите 10 цифр номера"
+            required>
+          <input class="modal__form-email" id="email" type="email" name="email" placeholder="E-mail" required>
+        </div>
+        <button class="modal__button button" type="submit">Отправить</button>
+      </form>
+      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    </div>
   </section>
   <script src="js/script.min.js"></script>
 </body>

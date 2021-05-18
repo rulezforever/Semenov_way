@@ -1,10 +1,11 @@
 .questions {
-  background-color: chartreuse;
   width: 844px;
   min-height: 455px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  // display: flex;
+  // justify-content: flex-end;
+  // align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .questions__wrapper {
@@ -16,7 +17,12 @@
   align-items: center;
   padding: 45px;
   box-sizing: border-box;
-  background-color: red;
+  background-color: $white;
+  box-shadow: 0 4px 30px $shadow;
+  border-radius: 5px;
+  position: absolute;
+  top: 71px;
+  right: 364px;
 }
 
 .questions__header {
@@ -29,11 +35,13 @@
 .questions__text {
   @include font-set(16px, 150%, 400);
   color: $deep-dark;
+  margin-bottom: 20px;
 }
 
 .questions__form-phone {
   width: 269px;
-  height: 50px;
+  height: 46px;
+  border-color: $dark-opacity;
 
   &::placeholder {
     @include font-set(14px, auto, 400);
@@ -44,11 +52,14 @@
 .questions__inputs {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 27px;
 }
 
 .questions__form-email {
   width: 269px;
-  height: 50px;
+  height: 46px;
+  border-color: $dark-opacity;
 
   &::placeholder {
     @include font-set(14px, auto, 400);
@@ -60,4 +71,10 @@
 .questions__button {
   width: 176px;
   padding: 15px 0;
+  border: none;
+}
+
+.questions__image {
+  width: 844px;
+  height: 455px;
 }
