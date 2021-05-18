@@ -11,14 +11,21 @@
   display: grid;
   grid-template-columns: 397px 452px 456px;
   grid-template-areas: "complex economy price";
-  // padding-left: 375px;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    // grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "price price"
       "complex economy";
     padding: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "price"
+      "complex"
+      "economy";
+    padding: 0;
+    gap: 30px;
   }
 }
 
@@ -37,8 +44,14 @@
     min-height: 629px;
     padding: 30px 20px 0;
     align-items: center;
-    justify-self: start;
     margin-left: 70px;
+    border-bottom: none;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto;
+    min-height: 614px;
   }
 }
 
@@ -52,6 +65,10 @@
   @media (max-width: $tablet-width) {
     margin-left: 25px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto;
+  }
 }
 
 .prices__card--economy .prices__card-list {
@@ -60,6 +77,10 @@
 
 .prices__card--economy .prices__card-item {
   margin-bottom: 14px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .prices__card-title {
@@ -68,9 +89,19 @@
   color: $deep-dark;
   opacity: 0.7;
   margin: 0 0 37px;
+  box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
     @include font-set(24px, 38px, 600);
+    width: 200px;
+    text-align: center;
+    margin: 0 0 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    @include font-set(24px, 34px, 600);
+    letter-spacing: 0;
+    margin: 0 0 24px;
   }
 }
 
@@ -83,8 +114,9 @@
 
   @media (max-width: $tablet-width) {
     text-align: center;
+    width: 260px;
+    margin: 0 0 29px;
   }
-
 
   &::after {
     content: "";
@@ -95,6 +127,11 @@
     height: 1px;
     background-color: $dark;
     opacity: 0.3;
+
+    @media (max-width: $tablet-width) {
+      width: 248px;
+      left: 8px;
+    }
   }
 }
 
@@ -104,6 +141,14 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 45px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .prices__card-item {
@@ -113,6 +158,11 @@
   width: 280px;
   margin-bottom: 11px;
   padding-left: 30px;
+
+  @media (max-width: $tablet-width) {
+    width: 220px;
+    margin-bottom: 8px;
+  }
 
   &::before {
     content: "";
@@ -131,6 +181,17 @@
 .prices__card-button {
   width: 310px;
   padding: 30px 0;
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+    padding: 16px 0;
+  }
+}
+
+.prices__card-currrency {
+  @media (max-width: $tablet-width) {
+    @include font-set(25px, 34px, 700);
+  }
 }
 
 .prices__contacts {
@@ -143,6 +204,10 @@
   @media (max-width: $tablet-width) {
     display: block;
     width: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -171,6 +236,10 @@
     text-align: center;
     margin: 0 0 5px;
   }
+
+  @media (max-width: $mobile-width) {
+    @include font-set(24px, 150%, 600);
+  }
 }
 
 .prices__contacts-text {
@@ -184,6 +253,11 @@
     width: auto;
     text-align: center;
     margin-bottom: 32px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    margin-bottom: 23px;
   }
 }
 

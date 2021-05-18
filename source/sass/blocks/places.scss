@@ -1,5 +1,9 @@
 .places {
   margin-bottom: 96px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 38px;
+  }
 }
 
 

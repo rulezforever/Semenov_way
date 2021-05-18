@@ -1,0 +1,43 @@
+.questions {
+background-color: chartreuse;
+}
+
+.questions__wrapper {
+  width: 656px;
+  min-height: 315px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: white;
+
+}
+
+.questions__header {
+  @include font-set(25px, 32px, 600);
+  color: $deep-dark;
+  text-align: center;
+}
+
+.questions__text {
+  @include font-set(16px, 150%, 400);
+  color: $deep-dark;
+}
+
+.questions__form-phone {
+  width: 269px;
+  height: 50px;
+}
+
+.questions__form-email {
+  width: 269px;
+  height: 50px;
+}
+
+.questions__button {
+  width: 176px;
+  padding: 15px 0;
+}
