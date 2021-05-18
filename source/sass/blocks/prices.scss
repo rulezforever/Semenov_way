@@ -1,6 +1,7 @@
 .prices {
   display: flex;
   flex-direction: column;
+  margin-bottom: 138px;
 
   @media (max-width: $tablet-width) {
     align-items: center;

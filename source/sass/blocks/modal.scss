@@ -1,0 +1,100 @@
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: none;
+}
+
+.modal__buy {
+  top: 120px;
+  bottom: auto;
+  width: 728px;
+  height: 444px;
+}
+
+.modal__wrapper {
+  background-color: $light;
+  display: grid;
+  grid-template-columns: 338px 1fr;
+  grid-template-areas: "picture form";
+}
+
+.modal__picture {
+  grid-area: picture;
+}
+
+.modal__form {
+  grid-area: form;
+  box-sizing: border-box;
+  padding: 72px 60px 89px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form-header {
+  @include font-set(25px, 170%,600);
+  color: $modal;
+  margin: 0 0 50px;
+  text-align: center;
+}
+
+.modal__button {
+  width: 176px;
+  padding: 15px 0;
+  align-self: center;
+}
+
+.modal__form-phone {
+  width: 269px;
+  height: 50px;
+  margin: 0 0 15px;
+
+  &::placeholder {
+    @include font-set(14px, auto, 400);
+    color: $deep-dark;
+  }
+}
+
+.modal__form-email {
+  width: 269px;
+  height: 50px;
+  margin: 0 0 15px;
+
+  &::placeholder {
+    @include font-set(14px, auto, 400);
+    color: $deep-dark;
+    padding-left: 15px;
+  }
+}
+
+.modal__close {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  top: 8px;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 22px;
+    height: 1px;
+    background-color: $dark-opacity2;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

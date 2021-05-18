@@ -179,6 +179,14 @@
   align-items: flex-end;
 }
 
+.places__item:hover .places__view {
+  display: block;
+}
+
+.places__item:hover {
+  opacity: 0.7;
+}
+
 .places__bottom-text {
   @include font-set(24px, auto, 500);
   position: absolute;
@@ -199,7 +207,24 @@
 .places__image {
   @media (max-width: $tablet-width) {
     width: 288px;
-    // width: auto;
     height: 425px;
   }
+}
+
+.places__view {
+  @include font-set(14px, auto, 500);
+  position: absolute;
+  letter-spacing: 2px;
+  color: $white;
+  width: 266px;
+  min-height: 77px;
+  border: 1px solid $white;
+  padding: 22px 0;
+  left: 42px;
+  bottom: 200px;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  display: none;
 }

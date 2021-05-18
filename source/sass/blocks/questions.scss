@@ -1,25 +1,29 @@
 .questions {
-background-color: chartreuse;
+  background-color: chartreuse;
+  width: 844px;
+  min-height: 455px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .questions__wrapper {
   width: 656px;
-  min-height: 315px;
+  height: 315px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-
-  padding: 40px;
+  padding: 45px;
   box-sizing: border-box;
-  background-color: white;
-
+  background-color: red;
 }
 
 .questions__header {
   @include font-set(25px, 32px, 600);
   color: $deep-dark;
   text-align: center;
+  margin: 0;
 }
 
 .questions__text {
@@ -30,11 +34,27 @@ background-color: chartreuse;
 .questions__form-phone {
   width: 269px;
   height: 50px;
+
+  &::placeholder {
+    @include font-set(14px, auto, 400);
+    color: $deep-dark;
+  }
+}
+
+.questions__inputs {
+  display: flex;
+  justify-content: space-between;
 }
 
 .questions__form-email {
   width: 269px;
   height: 50px;
+
+  &::placeholder {
+    @include font-set(14px, auto, 400);
+    color: $deep-dark;
+    padding-left: 15px;
+  }
 }
 
 .questions__button {

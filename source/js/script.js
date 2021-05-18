@@ -37,3 +37,11 @@ window.addEventListener('DOMContentLoaded', function() {
   }
   });
 });
+
+
+
+// const closeBtn = document.querySelector('.modal__close');
+
+// closeBtn.addEventListener("click", () => {
+
+// });

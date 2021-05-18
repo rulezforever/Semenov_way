@@ -61,7 +61,7 @@
         <p class="places__slogan">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
         <ul class="places__list">
           <li class="places__item">
-            <a href="" class="places__picture">
+            <a href="#tabs" class="places__picture">
               <picture>
                 <source media="(min-width: 1024px)" type="image/webp"
                   srcset="img/greece@1x.webp 1x, img/greece@2x.webp 2x">
@@ -71,10 +71,11 @@
                   alt="Греция" class="places__image">
               </picture>
               <p class="places__bottom-text">Греция</p>
+              <div class="places__view">Смотреть подробнее</div>
             </a>
           </li>
           <li class="places__item">
-            <a href="" class="places__picture">
+            <a href="#tabs" class="places__picture">
               <picture>
                 <source media="(min-width: 1024px)" type="image/webp"
                   srcset="img/albania@1x.webp 1x, img/albania@2x.webp 2x">
@@ -84,10 +85,11 @@
                   alt="Албания" class="places__image">
               </picture>
               <p class="places__bottom-text">Албания</p>
+              <div class="places__view">Смотреть подробнее</div>
             </a>
           </li>
           <li class="places__item">
-            <a href="" class="places__picture">
+            <a href="#tabs" class="places__picture">
               <picture>
                 <source media="(min-width: 1024px)" type="image/webp"
                   srcset="img/macedonia@1x.webp 1x, img/macedonia@2x.webp 2x">
@@ -97,10 +99,11 @@
                   alt="Македония" class="places__image">
               </picture>
               <p class="places__bottom-text">Македония</p>
+              <div class="places__view">Смотреть подробнее</div>
             </a>
           </li>
           <li class="places__item">
-            <a href="" class="places__picture">
+            <a href="#tabs" class="places__picture">
               <picture>
                 <source media="(min-width: 1024px)" type="image/webp"
                   srcset="img/montenegro@1x.webp 1x, img/montenegro@2x.webp 2x">
@@ -110,10 +113,11 @@
                   height="430" alt="Черногория" class="places__image">
               </picture>
               <p class="places__bottom-text">Черногория</p>
+              <div class="places__view">Смотреть подробнее</div>
             </a>
           </li>
           <li class="places__item">
-            <a href="" class="places__picture">
+            <a href="#tabs" class="places__picture">
               <picture>
                 <source media="(min-width: 1024px)" type="image/webp"
                   srcset="img/croatia@1x.webp 1x, img/croatia@2x.webp 2x">
@@ -123,6 +127,7 @@
                   alt="Хорватия" class="places__image">
               </picture>
               <p class="places__bottom-text">Хорватия</p>
+              <div class="places__view">Смотреть подробнее</div>
             </a>
           </li>
         </ul>
@@ -172,8 +177,6 @@
               </p>
             </div>
           </div>
-          <!-- </div> -->
-
 
           <div class="about__tab-content">
             <h2 class="about__title">Албания</h2>
@@ -303,6 +306,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
 
 
@@ -355,12 +359,12 @@
         <p class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
         <form class="questions__form" id="form" method="post" action="https://echo.htmlacademy.ru">
           <div class="questions__inputs">
-            <input class="questions__form-phone" id="phone" type="tel" name="phone" placeholder="Введите 10 цифр номера"
-              required>
+            <input class="questions__form-phone" id="phone" type="tel" name="phone"
+              placeholder=" +7 Введите 10 цифр номера" required>
             <input class="questions__form-email" id="email" type="email" name="email" placeholder="E-mail" required>
           </div>
-          <button class="questions__button button" type="submit">Отправить</button>
         </form>
+        <button class="questions__button button" type="submit">Отправить</button>
       </div>
     </section>
   </main>
@@ -446,6 +450,25 @@
     </div>
 
   </footer>
+
+  <section class="modal modal__buy">
+    <div class="modal__wrapper">
+    <picture class="modal__picture">
+      <img src="img/modal-buy@1x.jpg" srcset="img/modal-buy@2x.jpg 2x" class="modal__image" alt="Волны" width="338"
+        height="444">
+    </picture>
+    <form class="modal__form" id="form" method="post" action="https://echo.htmlacademy.ru">
+      <h2 class="modal__form-header">Купить тур</h2>
+      <div class="modal__inputs">
+        <input class="modal__form-phone" id="phone" type="tel" name="phone"
+          placeholder=" +7 Введите 10 цифр номера" required>
+        <input class="modal__form-email" id="email" type="email" name="email" placeholder="E-mail" required>
+      </div>
+      <button class="modal__button button" type="submit">Отправить</button>
+    </form>
+    <button class="modal__close" type="button" aria-label="Закрыть"></button>
+  </div>
+  </section>
   <script src="js/script.min.js"></script>
 </body>
 
