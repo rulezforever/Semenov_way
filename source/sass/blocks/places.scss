@@ -227,4 +227,9 @@
   text-align: center;
   text-transform: uppercase;
   display: none;
+
+  @media (max-width: $tablet-width) {
+    width: 200px;
+    min-height: 50px;
+  }
 }
