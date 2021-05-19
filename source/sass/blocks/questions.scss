@@ -94,6 +94,10 @@
   justify-content: space-between;
   margin-bottom: 27px;
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+
   @media (max-width: $mobile-width) {
     display: block;
     margin-bottom: 0;
@@ -125,14 +129,17 @@
   width: 176px;
   padding: 15px 0;
   border: none;
+  margin-left: 196px;
 
   @media (max-width: $tablet-width) {
     width: 250px;
     padding: 17px 0;
+    margin-left: 160px;
   }
 
   @media (max-width: $mobile-width) {
     width: 288px;
+    margin-left: 0;
   }
 }
 

@@ -62,7 +62,8 @@
 
   &:hover,
   &:focus {
-    border: 3px solid $basic;
+    border: 1px solid $basic;
+    box-shadow: 0 0 0 2px $basic inset;
   }
 }
 
@@ -202,6 +203,11 @@
   width: 310px;
   padding: 30px 0;
 
+  &:hover,
+  &:focus {
+    background-color: $basic-hover;
+  }
+
   @media (max-width: $tablet-width) {
     width: 288px;
     padding: 16px 0;
@@ -209,8 +215,11 @@
 }
 
 .prices__card-currrency {
+  padding-left: 30px;
+
   @media (max-width: $tablet-width) {
     @include font-set(25px, 34px, 700);
+    padding-left: 0;
   }
 }
 

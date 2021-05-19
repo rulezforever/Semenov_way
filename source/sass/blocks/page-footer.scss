@@ -2,9 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  // padding: 0 388px;
   margin: 0 auto;
-  // background-color: cadetblue;
 }
 
 .page-footer__list {
@@ -98,11 +96,10 @@
 .page-footer__trip {
   width: 30%;
 }
-/////------------------------------------------------------------
+
 .page-footer__corporate {
   width: 28%;
   position: relative;
-  // background-color: aqua;
 
   &::before {
     content: "";
@@ -138,7 +135,6 @@
   width: 27%;
   padding-left: 102px;
   position: relative;
-  // background-color: burlywood;
 
   &::before {
     content: "";
@@ -170,7 +166,6 @@
 }
 
 .page-footer__trip {
-  // background-color: coral;
   padding-left: 13px;
 
   @media (max-width: $tablet-width) {
@@ -183,7 +178,7 @@
     padding: 0 12px;
   }
 }
-/////---------------------------------------------------
+
 .page-footer__item {
   @include font-set(14px, 25px, 400);
   color: $deep-dark;

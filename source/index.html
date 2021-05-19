@@ -372,8 +372,9 @@
               placeholder=" +7 Введите 10 цифр номера" required>
             <input class="questions__form-email" id="e-mail" type="email" name="email" placeholder="E-mail" required>
           </div>
+          <button class="questions__button button" type="submit">Отправить</button>
         </form>
-        <button class="questions__button button" type="submit">Отправить</button>
+
       </div>
     </section>
   </main>
@@ -477,6 +478,12 @@
       </form>
       <button class="modal__close" type="button" aria-label="Закрыть"></button>
     </div>
+  </section>
+
+  <section class="modal modal__success">
+    <h2 class="visually-hidden">Успешная отправка формы</h2>
+    <p class="modal__success-text">Форма успешно отправлена, спасибо! :)</p>
+    <button class="modal__success-close" type="button" aria-label="Закрыть"></button>
   </section>
   <script src="js/script.min.js"></script>
 </body>

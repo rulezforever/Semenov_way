@@ -7,6 +7,10 @@
   left: 0;
   margin: auto;
   display: none;
+
+  &--show {
+    display: block;
+  }
 }
 
 .modal__buy {
@@ -71,7 +75,8 @@
   }
 }
 
-.modal__close {
+.modal__close,
+.modal__success-close {
   border: none;
   outline: none;
   background-color: transparent;
@@ -97,4 +102,26 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.modal__success {
+  background-color: $light;
+  top: 200px;
+  bottom: auto;
+  width: 728px;
+  height: 444px;
+  display: none;
+  z-index: 3;
+
+  &--show {
+    display: block;
+  }
+}
+
+.modal__success-text {
+  @include font-set(25px, 170%,500);
+  text-align: center;
+  width: 399px;
+  margin: 0 auto;
+  padding-top: 179px;
 }

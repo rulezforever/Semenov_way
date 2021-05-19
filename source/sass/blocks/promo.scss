@@ -118,6 +118,10 @@
     margin-top: 22px;
     width: 210px;
     text-align: center;
+
+    &:active {
+      background-color: $basic-hover;
+    }
   }
 }
 
